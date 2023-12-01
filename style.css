@@ -1,11 +1,15 @@
 body {
   background-color: black;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+            height: 56.25vh; /* 16:9 aspect ratio (9 / 16 = 0.5625) */
+            overflow: hidden;
 }
 
 video {
-  width: 100%;
-  max-width:1920px;
+  width: 90%;
+  align-items: center;
 }
 
 button {
