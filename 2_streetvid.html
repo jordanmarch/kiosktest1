@@ -1,0 +1,87 @@
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="newstyle.css">
+  </head>
+  
+  <body>
+  <div class="container">
+
+
+          <p style="color:#ffffff ;text-align:center; font-size:120%;">Is Privacy Extinct?</p>
+  
+
+      <button-1 id="toggleButton">PLAY AUDIO</button-1>
+
+      <audio id="audioPlayer" src="House.ogg" type="audio/ogg"></audio>
+  
+      <script>
+          var audioPlayer = document.getElementById('audioPlayer');
+          var toggleButton = document.getElementById('toggleButton');
+  
+          toggleButton.addEventListener('click', function () {
+              if (audioPlayer.paused) {
+                  audioPlayer.play();
+                  toggleButton.innerText = 'PAUSE AUDIO';
+              } else {
+                  audioPlayer.pause();
+                  toggleButton.innerText = 'PLAY AUDIO';
+              }
+          });
+      </script>
+  </div>
+
+
+
+    <div class="video-container">
+        <video id="myVideo" autoplay muted playsinline>
+            <source src="https://link.storjshare.io/raw/jwgoy3x4twdldxq7eygxko6ynssa/street-vid%2F2_CCStreetVid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+        <a href="about.html">
+            <button id="revealButton" style="display: none;" onclick="revealButtonClick()">REVEAL</button>
+        </a>
+
+        <a href="about.html">
+            <button id="concealButton" style="display: none;" onclick="concealButtonClick()">CONCEAL</button>
+        </a>
+        <br>
+        <br>
+    </center>
+
+    <script>
+        var videoPlayer = document.getElementById('myVideo');
+        var revealButton = document.getElementById('revealButton');
+        var concealButton = document.getElementById('concealButton');
+
+        videoPlayer.addEventListener('ended', function () {
+            revealButton.style.display = 'inline-block';
+            concealButton.style.display = 'inline-block';
+        });
+
+        function revealButtonClick() {
+            // Handle what happens when the "REVEAL" button is clicked
+            alert('Reveal button clicked!');
+            // You can add your logic for revealing content
+        }
+
+        function concealButtonClick() {
+            // Handle what happens when the "CONCEAL" button is clicked
+            alert('Conceal button clicked!');
+            // You can add your logic for concealing content
+        }
+    </script>
+
+
+</body>
+</html>
