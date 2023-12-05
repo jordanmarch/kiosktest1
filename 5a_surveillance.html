@@ -11,13 +11,17 @@
 
 
           <p style="color:#ffffff ;text-align:center; font-size:120%;">Is Privacy Extinct?</p>
-     
-  </div>
   
+  </div>
+
+ 
   <div class="video-container">
     <button id="playButton">&#9654; Play</button>
     <video playsinline id="myVideo">
-        <source src="https://link.storjshare.io/raw/jxh6wjcomi7prxxvgvxrpddhkopq/privacy-defined%2F1a_CC_privacydefined.mp4" type="video/mp4">
+        <source
+            src="https://link.storjshare.io/raw/juzclasnuj33smgjax5awmokewsa/surveillance-vids%2F5A_surveillanceexplained_CC.mp4
+            "
+            type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>
@@ -34,28 +38,29 @@
     });
 
 </script>
+</div>
+
 <br>
 <br>
-<center>
-    <a href="2_streetvid.html">
-        <button id="nextButton" onclick="nextButtonClick()">NEXT</button>
-    </a>
-</center>
+<div class="bottom-buttons" id="bottomButtons">
+<a href="5b_surveillance.html">
+    <button id="button1">NEXT</button>
+</a>
+</div>
+
+<br>
+<br>
+<br>
 
 <script>
-    var videoPlayer = document.getElementById('myVideo');
-    var nextButton = document.getElementById('nextButton');
+var videoPlayer = document.getElementById('myVideo');
+var bottomButtons = document.getElementById('bottomButtons');
 
-    videoPlayer.addEventListener('ended', function () {
-        nextButton.style.display = 'block';
-    });
-
-    function nextButtonClick() {
-        // Handle what happens when the "NEXT" button is clicked
-        alert('Next button clicked!');
-        // You can add your logic for transitioning to the next part of your content
-    }
+videoPlayer.addEventListener('ended', function () {
+    bottomButtons.style.display = 'block';
+});
 </script>
+
 
 
 </body>

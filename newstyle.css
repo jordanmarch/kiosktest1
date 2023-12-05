@@ -39,28 +39,35 @@ button {
     margin-bottom: 13%;
   }
   button:active {
-    background-color: black;
+    background-color: rgb(0, 88, 3);
   }
   button:hover{
-    background-color: black;
+    background-color: rgb(0, 88, 3);
   }
 
 a {
     text-decoration: none;
   }
 
+  #nextButton {
+    display: none;
+    margin-bottom: 10px;
+}
+
   #revealButton,
   #concealButton {
       display: none;
       margin-right: 10px;
-      position: fixed; }
+      position: fixed; 
+      margin-bottom: 10px;
+    }
 
 .container {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Align items on each end of the container */
     width: 94%; /* Adjust the width as needed */
-    padding: 0.7em;
+    padding: 0.27em;
   }
 
   .video-container {
@@ -86,3 +93,36 @@ p{
   align: center;
 
 }
+
+.bottom-buttons {
+  position: fixed;
+  bottom: 3%; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.bottom-buttons button {
+  margin: 0 10px;
+}
+
+#playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(173, 0, 0);
+  border: none;
+  color: rgb(255, 255, 255);
+  
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    margin-bottom: 13%;
+}
+</style>

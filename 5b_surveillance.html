@@ -1,0 +1,67 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="newstyle.css">
+        </head>
+        
+        <body>
+        <div class="container">
+      
+      
+                <p style="color:#ffffff ;text-align:center; font-size:120%;">Is Privacy Extinct?</p>
+        
+        </div>
+      
+       
+        <div class="video-container">
+          <button id="playButton">&#9654; Play</button>
+          <video playsinline id="myVideo">
+              <source
+                  src="https://link.storjshare.io/raw/jxqttylxajzx4xr4kqnnuuhszzha/surveillance-vids%2F5B_Surveillance_CC.mp4
+
+                  "
+                  type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+      </div>
+      
+      <script>
+          var video = document.getElementById('myVideo');
+          var playButton = document.getElementById('playButton');
+      
+          playButton.addEventListener('click', function () {
+              if (video.paused) {
+                  video.play();
+                  playButton.style.display = 'none';
+              }
+          });
+      
+      </script>
+      </div>
+      
+      <br>
+      <br>
+      <div class="bottom-buttons" id="bottomButtons">
+      <a href="5b_surveillance.html">
+          <button id="button1">NEXT</button>
+      </a>
+      </div>
+      
+      <br>
+      <br>
+      <br>
+      
+      <script>
+      var videoPlayer = document.getElementById('myVideo');
+      var bottomButtons = document.getElementById('bottomButtons');
+      
+      videoPlayer.addEventListener('ended', function () {
+          bottomButtons.style.display = 'block';
+      });
+      </script>
+      
+      
+      
+      </body>
+      </html>
